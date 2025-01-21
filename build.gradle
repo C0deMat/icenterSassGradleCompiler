@@ -5,8 +5,8 @@ plugins {
     id 'java'
 }
 
-group 'com.leobia.gradle'
-version '0.2.2-alpha.0'
+group 'com.C0deMat.gradle'
+version '0.3.0'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -18,7 +18,7 @@ repositories {
 gradlePlugin {
     plugins {
         sassJavaCompiler {
-            id = 'com.leobia.gradle.sassjavacompiler'
+            id = 'com.C0deMat.gradle.icentersassjavacompiler'
             implementationClass = 'com.leobia.gradle.SassCompilerPlugin'
         }
     }
@@ -26,7 +26,7 @@ gradlePlugin {
 
 dependencies {
     compileOnly gradleApi()
-    implementation('io.bit3:jsass:5.10.4')
+    implementation('io.bit3:jsass:5.11.1')
 }
 
 publishing {
@@ -46,8 +46,8 @@ publishing {
 
 pluginBundle {
     description = "Compile and minify .sass files into a single css file. Can also merge existing css files with sass"
-    website = "https://github.com/leobia/SassGradleCompiler"
-    vcsUrl = "https://github.com/leobia/SassGradleCompiler"
+    website = "https://github.com/C0deMat/icenterSassGradleCompiler"
+    vcsUrl = "https://github.com/C0deMat/icenterSassGradleCompiler"
     tags = ["sass", "css", "compile", "minify", "build", "build artifacts", "cd", "ci", "files", "java"]
 
     plugins {
