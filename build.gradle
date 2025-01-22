@@ -5,7 +5,7 @@ plugins {
     id 'java'
 }
 
-group 'com.C0deMat.gradle'
+group 'io.github.C0deMat'
 version '0.3.0'
 
 sourceCompatibility = 1.8
@@ -18,7 +18,7 @@ repositories {
 gradlePlugin {
     plugins {
         sassJavaCompiler {
-            id = 'com.C0deMat.gradle.icentersassjavacompiler'
+            id = 'io.github.C0deMat.icentersassjavacompiler'
             implementationClass = 'com.leobia.gradle.SassCompilerPlugin'
         }
     }

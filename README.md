@@ -13,7 +13,7 @@ A simple Sass compiler for gradle (tested only on Gradle 6.0+). Given a folder c
 Import the plugin using one of these:
 ```groovy
 plugins {
-  id "com.C0deMat.gradle.icentersassjavacompiler" version "0.3.0"
+  id "io.github.C0deMat.icentersassjavacompiler" version "0.3.0"
 }
 ```
 
@@ -26,11 +26,11 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.C0deMat.gradle:icentersassjavacompiler:0.3.0"
+    classpath "gradle.plugin.io.github.C0deMat:icentersassjavacompiler:0.3.0"
   }
 }
 
-apply plugin: "com.C0deMat.gradle.icentersassjavacompiler"
+apply plugin: "io.github.C0deMat.icentersassjavacompiler"
 ```
 
 #### Use the plugin
